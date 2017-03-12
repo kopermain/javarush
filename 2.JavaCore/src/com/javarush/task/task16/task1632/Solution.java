@@ -69,12 +69,11 @@ public class Solution {
         @Override
         public void showWarning()
         {
-//            interrupt();
-//            try {join();}
-//            catch (InterruptedException e){
-//                System.out.println("InterruptedException");
-//            }
-            this.stop();
+            interrupt();
+            try {join();}
+            catch (InterruptedException e){
+                System.out.println("InterruptedException");
+            }
         }
 
         @Override
